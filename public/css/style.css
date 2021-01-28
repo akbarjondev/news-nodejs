@@ -79,6 +79,15 @@ body {
 	background-color: #212529;	
 }
 
+.intro__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.intro__input {
+	margin-bottom: 25px;
+}
+
 /*post*/
 .post__heading {
 	font-size: 30px;
