@@ -18,8 +18,19 @@ app.get('/', (req, res) => {
 
 app.get('/view/:id?', (req, res) => {
 	const { id } = req.params
+
 	const post = posts.find(d => d.id === (id - 0))
-	res.render('view', post)
+	
+	if(Boolean(post)) {
+		res.render('view', post).end()
+	} else {
+		res.status(404)
+		res.redirect('/404').end()
+	}
+})
+
+app.get('/404', (_, res) => {
+	res.render('404')
 })
 
 app.listen(CONFIG.PORT, () => console.log(`Ready at http://localhost:${CONFIG.PORT}`))

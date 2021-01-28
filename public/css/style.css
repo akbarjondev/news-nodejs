@@ -78,3 +78,25 @@ body {
 	color: #ffffff;
 	background-color: #212529;	
 }
+
+/*post*/
+.post__heading {
+	font-size: 30px;
+}
+
+.post__text {
+	margin-top: 15px;
+	padding-top: 10px;
+	font-size: 18px;
+	border-top: 1px solid #212529;
+}
+
+/*404*/
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	font-size: 160px;
+	font-weight: 700;
+}

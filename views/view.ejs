@@ -10,9 +10,11 @@
 	<%- include('partials/header') %>
 	<div class="container">
 		<div class="post">
-			<div class="post__heading"><%= title %></div>
+			<h2 class="post__heading"><%= title %></h2>
+			<time datetime=<%= date %>>
+				<%= date %>
+			</time>
 			<div class="post__text"><%= text %></div>
-			<div class="post__date"><%= date %></div>
 		</div>
 	</div>
 </body>
