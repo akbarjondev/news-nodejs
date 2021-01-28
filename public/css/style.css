@@ -86,6 +86,14 @@ body {
 
 .intro__input {
 	margin-bottom: 25px;
+	font-family: monospace;
+}
+
+.intro__button--submit {
+	max-width: 150px;
+	padding: 10px;
+	background-color: #ffffff;
+	cursor: pointer;
 }
 
 /*post*/

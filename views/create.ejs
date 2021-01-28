@@ -15,13 +15,13 @@
 
 			<form class="intro__form" method="POST" action="/create">
 				<label for="title">Title</label>
-				<input class="intro__input" type="text" id="title" name="title" placeholder="Username" />
+				<input class="intro__input" type="text" id="title" name="title" placeholder="Title" required />
 				<label for="text">Text</label>
-				<input class="intro__input" type="text" id="text" name="text" placeholder="Password" />
+				<textarea class="intro__input" name="text" id="text" cols="30" rows="10" required ></textarea>
 				<label for="date">Date</label>
-				<input class="intro__input" type="date" id="date" name="date" placeholder="Password" />
+				<input class="intro__input" type="date" id="date" name="date" required />
 
-				<button class="intro__button list__link" id="intro__button" type="submit">Submit</button>
+				<button class="intro__button intro__button--submit list__link" id="intro__button" type="submit">Submit</button>
 			</form>
 		</div><!-- End of intro -->
 
