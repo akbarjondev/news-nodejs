@@ -1,10 +1,15 @@
 const express = require('express')
 const app = express()
 
-const Home = require('./src/Controllers/Home')
+const CONFIG = require('./config')
+const ejs = require('ejs')
 
-const CONFIG = require('./src/config')
+app.set('view engine', 'ejs')
 
-app.get('/', Home.GET)
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+	res.render('main', {data: 'Ali'})
+})
 
 app.listen(CONFIG.PORT, () => console.log(`Ready at http://localhost:${CONFIG.PORT}`))
