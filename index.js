@@ -10,11 +10,9 @@ const posts = require('./module/data')
 app.set('view engine', 'ejs')
 app.use(express.static(__dirname + '/public'))
 
-
 app.get('/', (req, res) => {
 	res.render('main', {posts})
 })
-
 
 app.get('/view/:id?', (req, res) => {
 	const { id } = req.params
